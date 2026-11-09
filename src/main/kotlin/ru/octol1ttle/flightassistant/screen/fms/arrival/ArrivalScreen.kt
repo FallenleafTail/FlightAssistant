@@ -60,7 +60,7 @@ class ArrivalScreen(parent: Screen) : FABaseScreen(parent, Component.translatabl
         super.onClose()
     }
 
-//? if >=26.2 {
+//? if >=26.1 {
     override fun extractRenderState(guiGraphics: net.minecraft.client.gui.GuiGraphicsExtractor, mouseX: Int, mouseY: Int, delta: Float) {
         discardChanges.active = state != ArrivalScreenState.load(computers.plan.arrivalData)
 

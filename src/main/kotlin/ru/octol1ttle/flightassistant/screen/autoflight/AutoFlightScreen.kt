@@ -60,7 +60,7 @@ class AutoFlightScreen(parent: Screen) : FABaseScreen(parent, Component.translat
         }.pos(this.width - 90, this.height - 30).width(80).build())
     }
 
-//? if >=26.2 {
+//? if >=26.1 {
     override fun extractRenderState(guiGraphics: net.minecraft.client.gui.GuiGraphicsExtractor, mouseX: Int, mouseY: Int, delta: Float) {
         updateButton(flightDirectors, "menu.flightassistant.autoflight.flight_directors", computers.autoflight.flightDirectors)
         updateButton(autoThrust, "menu.flightassistant.autoflight.auto_thrust", computers.autoflight.autoThrust)

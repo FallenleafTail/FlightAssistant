@@ -35,7 +35,7 @@ class FireworkComputer(computers: ComputerBus, private val mc: Minecraft) : Comp
 
     override fun subscribeToEvents() {
         ThrustSourceRegistrationCallback.EVENT.register { it.accept(this) }
-//? if fabric && >=26.2 {
+//? if fabric && >=26.1 {
         net.fabricmc.fabric.api.event.player.UseItemCallback.EVENT.register { player, world, hand ->
             val stack = player.getItemInHand(hand)
             if (world.isClientSide() && computers.data.flying && stack.item is FireworkRocketItem) {

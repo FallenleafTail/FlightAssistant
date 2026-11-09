@@ -47,7 +47,7 @@ class DepartureScreen(parent: Screen) : FABaseScreen(parent, Component.translata
         super.onClose()
     }
 
-//? if >=26.2 {
+//? if >=26.1 {
     override fun extractRenderState(guiGraphics: net.minecraft.client.gui.GuiGraphicsExtractor, mouseX: Int, mouseY: Int, delta: Float) {
         discardChanges.active = state != DepartureScreenState.load(computers.plan.departureData)
 

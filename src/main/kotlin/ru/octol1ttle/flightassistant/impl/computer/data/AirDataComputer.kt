@@ -88,8 +88,10 @@ class AirDataComputer(computers: ComputerBus, private val mc: Minecraft) : Compu
         if (FAKeyMappings.globalAutomationOverride.isDown) {
             return false
         }
-        //? if <26.2 {
+        //? if <26.1 {
         /*return (!checkFlying || flying) && (FAConfig.global.automationsAllowedInOverlays || (mc.screen == null && mc.overlay == null))
+*///?} else if <26.2 {
+        /*return (!checkFlying || flying) && (FAConfig.global.automationsAllowedInOverlays || (mc.screen == null && mc.getOverlay() == null))
 *///?} else {
         return (!checkFlying || flying) && (FAConfig.global.automationsAllowedInOverlays || (mc.gui.screen() == null && mc.gui.overlay() == null))
 //?}

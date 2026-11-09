@@ -21,8 +21,8 @@ abstract class FABaseScreen(val parent: Screen?, title: Component) : Screen(titl
         this.addRenderableWidget(SmartStringWidget(this.centerX, 7, this.title).middleAligned())
     }
 
-    // 26.2+ extracts the background itself before the screen contents and only allows one blur per frame
-//? if <26.2 {
+    // 26.1+ extracts the background itself before the screen contents and only allows one blur per frame
+//? if <26.1 {
     /*override fun render(guiGraphics: FAGuiGraphics, mouseX: Int, mouseY: Int, delta: Float) {
 //? if <1.21.6 {
         /^this.renderBackground(

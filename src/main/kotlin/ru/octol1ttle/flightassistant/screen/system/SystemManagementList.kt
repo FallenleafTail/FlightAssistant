@@ -31,7 +31,7 @@ class SystemManagementList(y0: Int, y1: Int, width: Int, baseKey: String, contro
 
         val children = listOf(this.displayName, faultText, offText, toggleButton)
 
-//? if >=26.2 {
+//? if >=26.1 {
         override fun extractContent(guiGraphics: net.minecraft.client.gui.GuiGraphicsExtractor, mouseX: Int, mouseY: Int, hovered: Boolean, partialTick: Float) {
             val top = contentY
 //?} else if >=1.21.9 {

@@ -24,7 +24,7 @@ class CycleTextOnlyButton<E : NameableEnum>(x: Int, y: Int, private val entries:
         refreshMessage()
     }
 
-//? if >=26.2 {
+//? if >=26.1 {
     override fun extractContents(guiGraphics: net.minecraft.client.gui.GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
 //?} else if >=1.21.11 {
 /*    override fun renderContents(guiGraphics: FAGuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {

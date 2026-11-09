@@ -23,6 +23,8 @@ allprojects {
         strictMaven("https://maven.terraformersmc.com/releases", "com.terraformersmc")
         strictMaven("https://maven.enjarai.dev/releases", "nl.enjarai")
         maven("https://maven.enjarai.dev/mirrors")
+        // Do a Barrel Roll's 26.1 build declares its Mod Menu/YACL runtime deps through Modrinth's Maven
+        maven("https://api.modrinth.com/maven")
         maven("https://oss.sonatype.org/content/repositories/snapshots")
     }
 }

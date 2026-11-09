@@ -65,7 +65,7 @@ class EnrouteScreen(parent: Screen) : FABaseScreen(parent, Component.translatabl
         }.pos(this.width - 90, this.height - 30).width(80).build())
     }
 
-//? if >=26.2 {
+//? if >=26.1 {
     override fun extractRenderState(guiGraphics: net.minecraft.client.gui.GuiGraphicsExtractor, mouseX: Int, mouseY: Int, delta: Float) {
         deleteAll.active = state.waypoints.isNotEmpty()
 

@@ -88,7 +88,7 @@ fun textWidth(text: String): Int {
 }
 
 fun FAGuiGraphics.drawString(text: String, x: Int, y: Int, color: Int, shadow: Boolean = false) {
-//? if <26.2 {
+//? if <26.1 {
     /*drawString(font, text, x, y, color, shadow)
 *///?} else {
   this.text(font, text, x, y, color, shadow)
@@ -96,7 +96,7 @@ fun FAGuiGraphics.drawString(text: String, x: Int, y: Int, color: Int, shadow: B
 }
 
 fun FAGuiGraphics.drawRightAlignedString(text: String, x: Int, y: Int, color: Int, shadow: Boolean = false) {
-//? if <26.2 {
+//? if <26.1 {
     /*drawString(font, text, x - font.width(text), y, color, shadow)
 *///?} else {
   this.text(font, text, x - font.width(text), y, color, shadow)
@@ -104,7 +104,7 @@ fun FAGuiGraphics.drawRightAlignedString(text: String, x: Int, y: Int, color: In
 }
 
 fun FAGuiGraphics.drawMiddleAlignedString(text: String, x: Int, y: Int, color: Int, shadow: Boolean = false) {
-//? if <26.2 {
+//? if <26.1 {
     /*drawString(font, text, x - font.width(text) / 2 + 1, y, color, shadow)
 *///?} else {
   this.text(font, text, x - font.width(text) / 2 + 1, y, color, shadow)
@@ -116,7 +116,7 @@ fun textWidth(formattedText: FormattedText): Int {
 }
 
 fun FAGuiGraphics.drawString(text: Component, x: Int, y: Int, color: Int, shadow: Boolean = false): Int {
-//? if <26.2 {
+//? if <26.1 {
     /*drawString(font, text, x, y, color, shadow)
 *///?} else {
   this.text(font, text, x, y, color, shadow)
@@ -133,7 +133,7 @@ private fun getContrasting(original: Int): Int {
 }
 
 fun FAGuiGraphics.drawRightAlignedString(text: Component, x: Int, y: Int, color: Int, shadow: Boolean = false) {
-//? if <26.2 {
+//? if <26.1 {
     /*drawString(font, text, x - textWidth(text), y, color, shadow)
 *///?} else {
   this.text(font, text, x - textWidth(text), y, color, shadow)
@@ -141,7 +141,7 @@ fun FAGuiGraphics.drawRightAlignedString(text: Component, x: Int, y: Int, color:
 }
 
 fun FAGuiGraphics.drawMiddleAlignedString(text: Component, x: Int, y: Int, color: Int, shadow: Boolean = false) {
-//? if <26.2 {
+//? if <26.1 {
     /*drawString(font, text, x - textWidth(text) / 2 + 1, y, color, shadow)
 *///?} else {
   this.text(font, text, x - textWidth(text) / 2 + 1, y, color, shadow)
@@ -173,7 +173,7 @@ fun org.joml.Matrix3x2fStack.push() {
 }
 
 
-//? if <26.2 {
+//? if <26.1 {
 /*//? if >=1.21.9 {
 fun FAGuiGraphics.renderOutline(x: Int, y: Int, width: Int, height: Int, color: Int) {
 //? if >=1.21.11 {
@@ -187,7 +187,7 @@ fun FAGuiGraphics.renderOutline(x: Int, y: Int, width: Int, height: Int, color: 
 *///?}
 
 
-//? if >=26.2 {
+//? if >=26.1 {
 fun FAGuiGraphics.renderOutline(x: Int, y: Int, width: Int, height: Int, color: Int) {
     fill(x, y, x + width, y + 1, color)
     fill(x, y + height - 1, x + width, y + height, color)
@@ -200,7 +200,7 @@ fun FAGuiGraphics.renderOutline(x: Int, y: Int, width: Int, height: Int, color: 
 
 
 
-//? if >=26.2 {
+//? if >=26.1 {
 fun FAGuiGraphics.hLine(minX: Int, maxX: Int, y: Int, color: Int) {
     var minXVar = minX
     var maxXVar = maxX
@@ -236,7 +236,7 @@ fun net.minecraft.client.Minecraft.setScreenSafe(screen: net.minecraft.client.gu
 //?}
 }
 
-//? if >=26.2 {
+//? if >=26.1 {
 fun net.minecraft.client.gui.components.AbstractWidget.renderCompat(guiGraphics: net.minecraft.client.gui.GuiGraphicsExtractor, mouseX: Int, mouseY: Int, partialTick: Float) {
     this.extractRenderState(guiGraphics, mouseX, mouseY, partialTick)
 }
@@ -246,7 +246,7 @@ fun net.minecraft.client.gui.components.AbstractWidget.renderCompat(guiGraphics:
 }
 *///?}
 
-//? if >=26.2 {
+//? if >=26.1 {
 fun net.minecraft.client.gui.GuiGraphicsExtractor.drawString(font: net.minecraft.client.gui.Font, text: net.minecraft.network.chat.Component, x: Int, y: Int, color: Int, shadow: Boolean = false) {
     this.text(font, text, x, y, color, shadow)
 }
@@ -257,7 +257,7 @@ fun net.minecraft.client.gui.GuiGraphicsExtractor.drawString(font: net.minecraft
 //?}
 
 fun FAGuiGraphics.pushPose() {
-//? if <26.2 {
+//? if <26.1 {
     /*this.pose().pushPose()
 *///?} else {
     this.pose().pushMatrix()
@@ -265,7 +265,7 @@ fun FAGuiGraphics.pushPose() {
 }
 
 fun FAGuiGraphics.popPose() {
-//? if <26.2 {
+//? if <26.1 {
     /*this.pose().popPose()
 *///?} else {
     this.pose().popMatrix()

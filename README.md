@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 > **Unofficial community continuation**  
-> This is an unofficial fork of [FlightAssistant by Octol1ttle](https://github.com/Octol1ttle/FlightAssistant), kept up to date for Minecraft 26.2 and newer.  
+> This is an unofficial fork of [FlightAssistant by Octol1ttle](https://github.com/Octol1ttle/FlightAssistant), kept up to date for Minecraft 26.1 and newer.  
 > It is **independent** and neither affiliated with nor endorsed by Octol1ttle. Please report problems with this fork [here](https://github.com/Henner4746/FlightAssistant/issues), not to the original project.
 
 <p align=center>
@@ -24,6 +24,8 @@
 |-----------|--------|
 | 26.3      | Fabric |
 | 26.2      | Fabric |
+| 26.1.2    | Fabric |
+| 26.1      | Fabric |
 
 Older Minecraft versions, Forge and NeoForge are covered by the [original FlightAssistant](https://modrinth.com/mod/flightassistant).
 
@@ -77,7 +79,7 @@ You need JDK 25. The project uses [Stonecutter](https://stonecutter.kikugie.dev/
 ./gradlew :26.3-fabric:build
 ```
 
-The jar ends up in `versions/26.3-fabric/build/libs/`. Replace `26.3` with `26.2` for the other version.
+The jar ends up in `versions/26.3-fabric/build/libs/`. Replace `26.3` with `26.2`, `26.1.2`, or `26.1` for the other versions.
 
 ## Credits and license
 

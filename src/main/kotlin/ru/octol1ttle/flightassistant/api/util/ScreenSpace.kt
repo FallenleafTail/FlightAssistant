@@ -102,7 +102,12 @@ object ScreenSpace {
     //?}
 
     fun getY(pitch: Float): Int? {
-        val vec: Vector3f = fromWorldSpace(Vec3.directionFromRotation(-pitch, mc.gameRenderer.mainCamera().yRot), true)
+//? if >=26.1 && <26.2 {
+        /*val camera = mc.gameRenderer.getMainCamera()
+*///?} else {
+        val camera = mc.gameRenderer.mainCamera()
+//?}
+        val vec: Vector3f = fromWorldSpace(Vec3.directionFromRotation(-pitch, camera.yRot), true)
         if (!isVisible(vec)) {
             return null
         }

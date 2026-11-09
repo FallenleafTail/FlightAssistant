@@ -189,7 +189,7 @@ class FlightAssistantSetupScreen : FABaseScreen(null, Component.translatable("me
 *///?}
     }
 
-//? if >=26.2 {
+//? if >=26.1 {
     override fun extractRenderState(guiGraphics: net.minecraft.client.gui.GuiGraphicsExtractor, mouseX: Int, mouseY: Int, delta: Float) {
         super.extractRenderState(guiGraphics, mouseX, mouseY, delta)
 

@@ -51,7 +51,7 @@ class EnrouteWaypointsList(y0: Int, y1: Int, width: Int, val columns: Float, val
 
         private var lastFlightPlanActive: FlightPlanComputer.EnrouteWaypoint.Active? = state.active
 
-//? if >=26.2 {
+//? if >=26.1 {
         override fun extractContent(guiGraphics: net.minecraft.client.gui.GuiGraphicsExtractor, mouseX: Int, mouseY: Int, hovered: Boolean, partialTick: Float) {
             val top = contentY
             val index = list.children().indexOf(this)
